@@ -5,7 +5,7 @@
 #### Clone the project and install dependencies
 
 ```
-git clone git@github.com:hqro/Babel-Express-ES8-API-Boilerplate.git API
+git clone git@github.com:efichot/Boilerplate-Swiss-knives API
 cd API
 yarn install
 ```
