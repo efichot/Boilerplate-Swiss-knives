@@ -14,17 +14,18 @@ const { SERVER_PORT, SERVER_HOST, NODE_ENV } = process.env
 
 const app = express()
 
-// view engine setup
+// view engine setup (comment this follow, if you want API instead of MVC)
 app
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'hbs');
+  .set('views', path.join(__dirname, '../views'))
+  .set('view engine', 'hbs')
+
+  .use(cookieParser()) // Parse Cookie (req.cookie)
+  .use(express.static(path.join(__dirname, 'public')));
 
 app
   .use(morgan('dev')) // :method :url :status :response-time ms - :res[content-length]
   .use(bodyParser.json()) // Parse application/json
   .use(bodyParser.urlencoded({ extended: true })) // Parse application/x-www-form-urlencoded
-  .use(cookieParser()) // Parse Cookie (req.cookie)
-  .use(express.static(path.join(__dirname, 'public')))
   .use(cors()) // Enable Cross Origin Resource Sharing
   .use(helmet()) // Secure your app by setting various HTTP headers
   .use(passport.initialize()) // initialize passport middleware
