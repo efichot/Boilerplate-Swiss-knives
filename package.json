@@ -1,0 +1,63 @@
+{
+  "name": "express-backpack-babel-starting-boilerplate",
+  "version": "3.0.1",
+  "description": "Starting point for a new Node.js Api",
+  "main": "src/main.js",
+  "private": false,
+  "engines": {
+    "node": ">=8",
+    "npm": ">=4"
+  },
+  "scripts": {
+    "production": "NODE_ENV=production node ./build/main.js",
+    "build": "backpack build",
+    "start": "backpack",
+    "lint": "eslint -c .eslintrc src",
+    "test": "NODE_ENV=test SERVER_PORT=6788 jest --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hqro/Express-Backpack-Babel-ES7-Api-Boilerplate"
+  },
+  "keywords": [
+    "backpack-core",
+    "express",
+    "babel",
+    "es8"
+  ],
+  "author": "Guillaume L. <glarivie@student.42.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hqro/Express-Backpack-Babel-ES7-Api-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/hqro/Express-Backpack-Babel-ES7-Api-Boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.7.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "helmet": "^3.4.0",
+    "joi": "^13.0.2",
+    "lodash": "^4.14.1",
+    "mongoose": "^4.5.7",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^21.2.0",
+    "backpack-core": "^0.4.0-rc1",
+    "eslint": "^4.1.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.1",
+    "jest": "^21.2.0",
+    "morgan": "^1.7.0",
+    "supertest": "^3.0.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^1.1.2",
+    "kerberos": "^0.0.23"
+  }
+}
