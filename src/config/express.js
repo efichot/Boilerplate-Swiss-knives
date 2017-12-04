@@ -20,7 +20,7 @@ app
   .set('view engine', 'hbs')
 
   .use(cookieParser()) // Parse Cookie (req.cookie)
-  .use(express.static(path.join(__dirname, 'public')));
+  .use(express.static(path.join(__dirname, '../public')));
 
 app
   .use(morgan('dev')) // :method :url :status :response-time ms - :res[content-length]
