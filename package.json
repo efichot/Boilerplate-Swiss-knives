@@ -25,7 +25,7 @@
     "babel",
     "es8"
   ],
-  "author": "Guillaume L. <glarivie@student.42.fr>",
+  "author": "Etienne Fichot <efichot@student.42.fr>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/efichot/Boilerplate-Swiss-knives/issues"
