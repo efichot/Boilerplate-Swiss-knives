@@ -5,7 +5,7 @@
 #### Clone the project and install dependencies
 
 ```
-git clone git@github.com:efichot/Boilerplate-Swiss-knives API
+git clone https://github.com/efichot/Boilerplate-Swiss-knives API
 cd API
 yarn install
 ```
