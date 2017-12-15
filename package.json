@@ -15,10 +15,6 @@
     "lint": "eslint -c .eslintrc src",
     "test": "NODE_ENV=test SERVER_PORT=6788 jest --forceExit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/efichot/Boilerplate-Swiss-knives"
-  },
   "keywords": [
     "backpack-core",
     "express",
