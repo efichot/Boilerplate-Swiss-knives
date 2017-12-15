@@ -23,10 +23,6 @@
   ],
   "author": "Etienne Fichot <efichot@student.42.fr>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/efichot/Boilerplate-Swiss-knives/issues"
-  },
-  "homepage": "https://github.com/efichot/Boilerplate-Swiss-knives#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
